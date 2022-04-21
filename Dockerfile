@@ -28,6 +28,6 @@ RUN set -x \
 ADD 50x.html /opt/nginx/html/50x.html
 ADD nginx.conf /etc/nginx/nginx.conf
 
-EXPOSE 8080
+EXPOSE 80
 
 ENTRYPOINT ["nginx", "-g", "daemon off;"]
